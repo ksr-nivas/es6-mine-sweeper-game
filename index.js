@@ -1,8 +1,10 @@
 import Grid from './grid.js';
 import * as constants from './constants.js';
 
-window.color = function(value){
-  return `rgb(${value}, ${value}, ${value})`;
+window.color = function(r, g, b){
+  g = g || r;
+  b = b || r;
+  return `rgb(${r}, ${g}, ${b})`;
 }
 
 const canvas = document.getElementById("screen");
