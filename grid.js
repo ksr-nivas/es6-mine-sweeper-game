@@ -67,7 +67,6 @@ export default class Grid {
   onclick(mouseX, mouseY) {
     this.getAllCells().forEach((cell) => {
       if (cell.getCell(mouseX, mouseY)) {
-        console.log(cell);
         this.show(cell);
       }
     });
